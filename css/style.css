@@ -7,7 +7,7 @@ h1 {
 }
 
 h3 {
-  color: rgb(70, 117, 204);
+  color: #06c;
 }
 
 h4, header p {
@@ -26,6 +26,10 @@ section {
   background-color: #0a4b78;
 }
 
+section svg {
+  padding-top: 0.25rem;
+}
+
 main h2 {
   color: rgb(0, 56, 90);
 }
@@ -33,9 +37,20 @@ main h2 {
 section h2 {
   color: #e6f1f5;
 }
+
 header {
   background-color: #424245;
   color: #f5f5f7;
+}
+
+.job {
+  color: limegreen;
+}
+
+@media screen and (max-width: 480px) {
+  .job {
+    display: none;
+  }
 }
 
 footer {
