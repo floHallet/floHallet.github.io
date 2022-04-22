@@ -3,15 +3,39 @@ html {
 }
 
 h1 {
-  color: rgb(0, 117, 204);
+  color: #f5f5f7;
+}
+
+h3 {
+  color: rgb(70, 117, 204);
+}
+
+h4, header p {
+  color: #424245;
+}
+
+a {
+  color: #06c;
+}
+
+#jumbo {
+  background-color: #eff3f7;
+}
+
+section {
+  background-color: #0a4b78;
 }
 
 main h2 {
   color: rgb(0, 56, 90);
 }
 
+section h2 {
+  color: #e6f1f5;
+}
 header {
-  background-color: rgb(0, 56, 90);
+  background-color: #424245;
+  color: #f5f5f7;
 }
 
 footer {
