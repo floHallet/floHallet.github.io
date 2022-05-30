@@ -39,24 +39,22 @@ a {
 
 section {
   /*background-color: #0a4b78;*/
-  background: linear-gradient(90deg, rgb(10, 75, 120) 0%, rgb(9, 61, 97) 75%);
-}
-section svg {
+  background: linear-gradient(90deg, rgba(10,75,120,1) 0%, rgba(9,61,97,1) 75%);
+  svg {
   padding-top: 0.25rem;
-}
-section h2 {
-  color: var(--white);
+  }
+  h2 {
+    color: var(--white);
+  }
 }
 
 footer {
   background-color: var(--bg-footer);
-}
+} 
 
 .job {
   color: var(--lime);
-}
-@media screen and (max-width: 480px) {
-  .job {
+  @media screen and (max-width: 480px) {
     display: none;
   }
 }
@@ -64,35 +62,31 @@ footer {
 .btn-primary {
   background-color: var(--blue-link);
   border-color: var(--blue-link);
+  &:hover {
+    background-color: var(--blue-link-hover);
+    border-color: var(--blue-link-hover);
+  }
 }
-.btn-primary:hover {
-  background-color: var(--blue-link-hover);
-  border-color: var(--blue-link-hover);
-}
-
 .btn-outline-primary {
   color: var(--blue-link);
   border-color: var(--blue-link);
-}
-.btn-outline-primary:hover {
-  background-color: var(--blue-link-hover);
-  border-color: var(--blue-link-hover);
+  &:hover {
+    background-color: var(--blue-link-hover);
+    border-color: var(--blue-link-hover);
+  }
 }
 
 .rotate {
   transform: perspective(1500px) rotateY(-15deg);
   transition: transform 1s ease 0s;
+  &:hover {
+    transform: perspective(3000px) rotateY(5deg);
+  }
 }
-.rotate:hover {
-  transform: perspective(3000px) rotateY(5deg);
-}
-
 .rotate-left {
   transform: perspective(1500px) rotateY(15deg);
   transition: transform 1s ease 0s;
+  &:hover {
+    transform: perspective(3000px) rotateY(-5deg);
+  }
 }
-.rotate-left:hover {
-  transform: perspective(3000px) rotateY(-5deg);
-}
-
-/*# sourceMappingURL=style.css.map */
